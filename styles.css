@@ -27,6 +27,11 @@ h1 {
     font-size: 16px;
     font-weight: bold;
     border-style: hidden;
+    cursor: pointer;
+}
+
+#new-book-btn:hover {
+    border: 1px solid white;
 }
 
 .books-container {
@@ -53,16 +58,6 @@ h1 {
 .book-info {
     padding-left: 10px;
     font-style: italic;
-}
-
-#read-btn {
-    background-color: #004700;
-    color: white;
-    margin-left: 10px;
-    border-style: hidden;
-    border-radius: 5px;
-    width: 60px;
-    height: 20px;
 }
 
 .popup {
