@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library</title>
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+
+        <div id="new-book-popup" class="popup">
+            <div class="popup-content">
+                <span id="close">&times;</span>
+                <h2 id="add-new-book-title">Add New Book</h2>
+                <div class="book-info-input">
+                    <label class="popup-header">Author: </label>
+                    <input type="text" class="book-info-input-field" id="author-input" maxlength="20" required>
+                </div>
+                <div class="book-info-input">
+                    <label class="popup-header">Title: </label>
+                    <input type="text" class="book-info-input-field" id="title-input" maxlength="20" required>
+                </div>
+                <div class="book-info-input">
+                    <label class="popup-header">Pages: </label>
+                    <input type="number" class="book-info-input-field" id="pages-input" maxlength="10000" required>
+                </div>
+                <div class="book-info-input-read">
+                    <label class="checkbox-container">Completed: </label>
+                        <input type="checkbox" id="read-input" class="book-read">
+                </div>
+                <div class="submit-field">
+                    <button class="submit" id="submit" type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <header>
+            <h1>My Library</h1>
+            <button id = "new-book-btn">New Book</button>
+        </header>
+        <div class="books-container" id="bookshelf">
+            <div class="book">
+                <h3 class="book-info-header">Author: </h3>
+                <p class="book-info">JK Rowling</p>
+                <h3 class="book-info-header">Title: </h3>
+                <p class="book-info">Harry Potter I</p>
+                <h3 class="book-info-header">Pages: </h3>
+                <p class="book-info">223</p>
+                <h3 class="book-info-header">Read:</h3>
+                <input type="checkbox" class="read-checkbox"></button>
+                <br>
+                <button class="delete-btn">Delete Book</button>
+            </div>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
