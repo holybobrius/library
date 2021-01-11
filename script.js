@@ -16,9 +16,11 @@ function addBook() {
     const newPages = document.getElementById("pages-input").value;
     const newRead = document.getElementById("read-input").checked;
     
-    const newBook = new Book(newAuthor, newTitle, newPages, newRead);
-    myLibrary.push(newBook);
-    displayBooks();
+    if(newAuthor !== "" && newTitle !== "" && newPages !== "") {
+        const newBook = new Book(newAuthor, newTitle, newPages, newRead);
+        myLibrary.push(newBook);
+        displayBooks();
+    }
 }
 
 function displayBooks() {
